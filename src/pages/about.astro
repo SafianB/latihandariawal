@@ -1,6 +1,6 @@
 ---
  import '../style/global.css';
- import Navigation from '../componen/navigation.astro';
+ import Header from '../componen/header.astro';
  import Footer from '../componen/footer.astro'; 
  
  const pageTitle = "About Me";
@@ -34,7 +34,7 @@ const textCase = "uppercase";
   </head>
   <body>
 
-    <Navigation/>
+    <Header/>
     <h1>{pageTitle}</h1>
     <h2>... and my new Astro site!</h2>
 
@@ -61,5 +61,8 @@ const textCase = "uppercase";
 
 		My goal is {goal - 2} day.
     <Footer/>
+    <script>
+      import '../menu';
+    </script>
   </body>
 </html>

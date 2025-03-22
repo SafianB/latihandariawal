@@ -3,6 +3,7 @@ import Header from '../componen/header.astro';
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro'; 
 import Footer from '../componen/footer.astro';
+import Photo from '../componen/phome.astro';
 
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -14,15 +15,14 @@ const pageTittle = "Home Page";
 	<div class="home">
 		<Header/>
 	
+		<Photo/>
 		
-		<h1>Welcome</h1>  
-	
-	
 		
 		<Footer/>
 	</div>
 
 	<script>
 		import '../menu';
+		import '../slide';
 	</script>
 </Layout>
